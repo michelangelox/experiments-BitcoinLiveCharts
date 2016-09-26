@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+		<link href="css/style.css" rel="stylesheet">
+	<style>
+		.charts div {
+			float: left;
+			width: 40%;
+			margin-right: 2%;
+		}
+
+		.chart {
+			border: 1px solid black;
+		}
+
+		.fa-spin {
+			margin: 30px;
+			margin-top: 80px;
+		}
+	</style>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+	<script type="text/javascript" src="scripts/source_charts.js"></script>
+</head>
+	<body>
+		<div class="charts innertextsection marketperspective">
+			<h3 class="maininnertext"><i class="fa fa-bar-chart-o"></i>Bitcoin Live Charts</h3>
+
+			<div class="chart one_half">
+					<div id="chart_marketprice" style="height:200px;"><i class="fa fa-refresh fa-spin"></i></div>
+			</div>
+			<div class="chart one_half_last">
+				<div id="chart_circulation" style="height:200px;"><i class="fa fa-refresh fa-spin"></i></div>
+			</div>
+
+			<div class="chart one_half">
+				<div id="chart_transaction" style="height:200px;"><i class="fa fa-refresh fa-spin"></i></div>
+			</div>
+
+			<div class="chart one_half_last">
+				<div id="chart_marketcap" style="height:200px;"><i class="fa fa-refresh fa-spin"></i></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>
+

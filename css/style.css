@@ -1,0 +1,26 @@
+/* charts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#charts-heading.segment{
+    padding-bottom: 0;
+}
+#charts-heading.segment .heading2{
+    margin-bottom: 0;
+}
+
+div.chart{
+    margin: 10px 10px;
+    border: 1px solid black;
+}
+
+div#charts-list{
+    margin: 0 30px;
+}
+
+.chartspinner{
+    margin: 100px;
+}
+
+.charttext{
+    font-size: 12px;
+    line-height: 20px;
+    margin-top:10px;
+}
