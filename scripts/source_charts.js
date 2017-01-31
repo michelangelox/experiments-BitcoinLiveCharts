@@ -49,7 +49,7 @@ function renderChartData(_chartName, _chartType, _params, _axisText, _optionTitl
 			.done(function () {
 				options.title = _optionTitle;
 				drawChart('chart_' + _chartName, datatable, options);
-		});
+			});
 }
 
 function drawChart(_chart, _datatable, _options) {
@@ -71,3 +71,5 @@ function addCommas(nStr) {
 		}
 		return x1 + x2;
 }
+
+
