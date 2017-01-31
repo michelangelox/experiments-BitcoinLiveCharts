@@ -66,8 +66,11 @@ jQuery(document).ready(function($) {
     //var copyright = "Copyright &copy; " + new Date().getFullYear() + " bitcoinbit.com";
     //$("p#copyright").html(copyright);
 
-
+var capbtc = 21000000;
+var yearlastbtc = 2140;
 var source = "./stats.php";
+
+jQuery(".year_till_all_mined .hgr_number_string").attr("data-to", yearlastbtc);
     
     jQuery.getJSON(source, function(data) {
         jQuery.each(data, function(key, val) {
@@ -78,7 +81,9 @@ var source = "./stats.php";
                     break;
                     
                 case "totalbc":
-                    jQuery(".totalbc .hgr_number_string").attr("data-to", val/100000000);
+                    var totalbtc = val/100000000;
+                    jQuery(".totalbc .hgr_number_string").attr("data-to", totalbtc);
+                    jQuery(".coins_till_all_mined .hgr_number_string").attr("data-to", capbtc - totalbtc);
                     break;
                 
                 /*    
@@ -92,5 +97,7 @@ var source = "./stats.php";
                 */  
             }
         });
+
+        
     });
 });

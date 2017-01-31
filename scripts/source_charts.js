@@ -49,8 +49,6 @@ function renderChartData(_chartName, _chartType, _params, _axisText, _optionTitl
 			.done(function () {
 				options.title = _optionTitle;
 				drawChart('chart_' + _chartName, datatable, options);
-				renderRemainingCoins(200);
-				//renderRemainingDays();
 			});
 }
 
@@ -72,15 +70,6 @@ function addCommas(nStr) {
 				x1 = x1.replace(rgx, '$1' + ',' + '$2');
 		}
 		return x1 + x2;
-}
-
-function renderRemainingCoins(val) {
-	jQuery(".days_till_all_mined .hgr_number_string").attr("data-to", val);
-	//jQuery(".coins_till_all_mined .hgr_counter_number .hgr_number_string").html("<p>coins_till_all_mined</p>");
-}
-
-function renderRemainingDays() {
-	//jQuery(".days_till_all_mined .hgr_counter_number .hgr_number_string").append("!!!!!!!");
 }
 
 
